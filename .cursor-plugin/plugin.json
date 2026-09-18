@@ -8,7 +8,8 @@
     "url": "https://dualentry.com"
   },
   "homepage": "https://docs.dualentry.com/developers/guides/mcp-integration",
-  "license": "Proprietary",
+  "repository": "https://github.com/dualentry/plugin-cursor",
+  "license": "MIT",
   "keywords": [
     "dualentry",
     "dualentry accounting",

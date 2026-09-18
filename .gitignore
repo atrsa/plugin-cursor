@@ -12,3 +12,6 @@
 *.log
 tmp/
 temp/
+
+# Local tooling state
+.tokensave/
