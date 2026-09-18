@@ -1,34 +1,22 @@
-# Cursor plugin template
+# DualEntry plugin
 
-Build and publish Cursor Marketplace plugins from a single repo.
+Official DualEntry plugin, for asking your live accounting ledger questions in plain language.
 
-Two starter plugins are included:
+The plugin lives in [`plugins/dualentry`](plugins/dualentry). Its [README](plugins/dualentry/README.md) covers what it does, how sign-in works, and what it can change.
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+## What ships
 
-## Getting started
+- Skills covering DualEntry overall, records, bank reconciliation, and reporting
+- Commands: `unpaid-invoices`, `invoice-payments`, `vendor-bills`, `review-bank-matches`
+- A `safe-accounting` rule holding the guardrails for changing the ledger
+- DualEntry's hosted MCP server at `https://api.dualentry.com/mcp/`, authenticated with OAuth
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+## Validate before submitting
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+```bash
+node scripts/validate-template.mjs
+```
 
-To add more plugins, see `docs/add-a-plugin.md`.
+## License
 
-## Single plugin vs multi-plugin
-
-This template defaults to **multi-plugin** (multiple plugins in one repo).
-
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
-
-## Submission checklist
-
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+Proprietary. Use of the hosted MCP is governed by DualEntry's terms.

@@ -1,0 +1,14 @@
+---
+description: Guardrails for changing anything in the DualEntry ledger
+alwaysApply: true
+---
+
+safe-accounting:
+
+- Never save, post, or delete a record until the user has seen the exact values and said yes. Reading and searching need no confirmation; anything that writes does.
+- Before a write, state the company the change lands in. Many users have more than one, and a correct entry in the wrong company is still wrong.
+- Show amounts with their currency and dates in full (2026-03-05, not 03/05). Never infer a missing date, currency, or account. Ask.
+- When a record could match several entities, list the candidates and let the user pick. Do not guess between two similarly named vendors.
+- Quote figures as the ledger returns them. Do not round, convert currencies, or recompute totals by hand.
+- If a request would touch a closed period, say so and stop.
+- Explain what a field means when the user seems unsure, in plain language rather than accounting shorthand.

@@ -1,0 +1,20 @@
+{
+  "name": "dualentry",
+  "displayName": "DualEntry",
+  "version": "1.0.0",
+  "description": "Ask your books questions in plain language. Search invoices, bills, and journal entries, review bank matches, and draft changes against the live DualEntry ledger. You confirm every save first.",
+  "author": {
+    "name": "DualEntry",
+    "url": "https://dualentry.com"
+  },
+  "homepage": "https://docs.dualentry.com/developers/guides/mcp-integration",
+  "license": "Proprietary",
+  "keywords": [
+    "dualentry",
+    "dualentry accounting",
+    "dualentry ledger",
+    "dualentry invoices",
+    "dualentry bank reconciliation"
+  ],
+  "logo": "assets/logo.svg"
+}

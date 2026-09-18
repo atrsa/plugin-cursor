@@ -1,23 +1,18 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "dualentry",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "DualEntry",
+    "email": "support@dualentry.com"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
-    "version": "0.1.0"
+    "description": "Official DualEntry plugin for asking your live accounting ledger questions in plain language",
+    "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "dualentry",
+      "source": "./plugins/dualentry",
+      "description": "Search invoices, bills, and journal entries, review bank matches, and draft changes against the live DualEntry ledger"
     }
   ]
 }
