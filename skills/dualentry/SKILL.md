@@ -17,17 +17,25 @@ A user only sees data their DualEntry account already permits. The connection do
 
 ## What the connection can do
 
-- Search invoices, bills, journal entries, and other records
-- Resolve vendors, customers, accounts, companies, and items
-- Inspect history, related payments, and bank-match suggestions
-- Preview and create contracts and fixed assets
-- Save records and entities, after the user confirms the values
+- **Records** across roughly thirty types, including invoices, bills, journal entries, expenses, payments, credits, prepayments, and refunds: search them, read their detail and history, find related records, and create or update them
+- **Entities**: search vendors, customers, accounts, companies, and items, and create or update them
+- **Companies**: list the legal entities in the organization
+- **Bank reconciliation**: read match suggestions, list and inspect bank transactions, trigger matching, and match or unmatch
+- **Contracts**: read one, preview its schedule, create it
+- **Fixed assets**: preview and create, update or patch, delete, read depreciation schedules, and list depreciation books
+
+## What it cannot do
+
+There is no report endpoint. No profit and loss, balance sheet, trial balance, or aging report exists. Totals and comparisons are assembled from record searches, which is what **dualentry-reporting** is for.
+
+The connection also does not convert currencies, and it does not create journal entries for you out of a described intent. It works on records, not on narrative instructions.
 
 ## Choosing the right skill
 
 - Finding, reading, or drafting a record → **dualentry-records**
 - Bank transactions, matching, or payments against a record → **dualentry-reconciliation**
 - "How much", "compare", "what changed", aging or period questions → **dualentry-reporting**
+- Capitalizing an asset, depreciation, or depreciation books → **dualentry-fixed-assets**
 
 ## Before changing anything
 

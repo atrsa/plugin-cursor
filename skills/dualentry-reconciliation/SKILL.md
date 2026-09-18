@@ -7,11 +7,22 @@ description: Work through bank transactions against the DualEntry ledger: review
 
 Reconciling is the work of answering one question per transaction: what in the books does this bank line correspond to? DualEntry suggests matches; the user decides.
 
+## Two kinds of suggestion
+
+DualEntry proposes two different things, and the difference decides what the user is agreeing to:
+
+- **Match** links a bank row to a transaction already on file. This is the common case and the smaller commitment.
+- **Create** drafts a new transaction to cover the bank row, usually a customer or vendor payment, or a transfer between the organization's own accounts. This writes a record that did not exist, so it deserves more explanation than a match does.
+
+Several candidates can exist for one bank row. Asking for only the highest ranked gives the same single pick the DualEntry interface defaults to, which is the right starting point. Pull the rest when the top pick looks wrong and the user wants to see alternatives.
+
 ## Reviewing suggestions
 
 Present suggested matches in a form someone can approve or reject at a glance, showing the bank line, the record it would match, the amount, and the date gap between them. Group the obvious ones so the user can accept them together, and separate anything that needs a judgment call.
 
 Never accept a suggestion on the user's behalf, no matter how confident the match looks. A match posts to the books.
+
+A match can also be undone. If the user realizes one was wrong, say so plainly and unmatch it rather than layering a correction on top.
 
 ## When a match is not obvious
 

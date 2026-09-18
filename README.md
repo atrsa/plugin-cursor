@@ -6,11 +6,14 @@ This plugin connects to your live DualEntry ledger. Once you have signed in, you
 
 ## What you can do
 
-- Find invoices, bills, journal entries, contracts, and fixed assets
+- Find invoices, bills, journal entries, expenses, payments, and around thirty other record types
 - Look up the vendors, customers, accounts, companies, and items they belong to
 - See related payments, what is still outstanding, and what changed
 - Review DualEntry's bank-match suggestions and approve the ones that are right
+- Capitalize a fixed asset, preview its depreciation before it posts, and read its schedule across book and tax depreciation books
 - Build a record in conversation, check the values, then save
+
+DualEntry has no report endpoint, so totals, aging, and period comparisons are assembled from record searches rather than pulled from a prepared report. The plugin tells you when a figure was built that way.
 
 ## Commands
 
